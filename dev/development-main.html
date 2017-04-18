@@ -11,21 +11,21 @@ Excluded from copying to source folder
     // first need to make object that saves success and failure callbacks
 
     var googleRunScript = {
-        successHandlers: [],
-        failureHandlers: [],
-        userObject: {},
-        withSuccessHandler: function(func) {
-            this.successHandlers.push(func);
-            return this;
-        },
-        withFailureHandler: function(func) {
-            this.failureHandlers.push(func);
-            return this;
-        },
-        withUserObject: function(obj) {
-            this.userObject = obj;
-            return this;
-        },
+            successHandlers: [],
+            failureHandlers: [],
+            userObject: {},
+            withSuccessHandler: function(func) {
+                this.successHandlers.push(func);
+                return this;
+            },
+            withFailureHandler: function(func) {
+                this.failureHandlers.push(func);
+                return this;
+            },
+            withUserObject: function(obj) {
+                this.userObject = obj;
+                return this;
+            },
     };
 
     var getter = {
