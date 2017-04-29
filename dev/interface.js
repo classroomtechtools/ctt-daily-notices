@@ -19,5 +19,9 @@ function doGet() {
 }
 
 function saveButton(tab, title, link) {
-	app.saveButton(tab, title, link)
+    app.saveButton(tab, title, link);
+}
+
+function createSpreadsheet() {
+	app.createSpreadsheet();
 }

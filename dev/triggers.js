@@ -1,17 +1,17 @@
 /*
-	Code that gets executed by triggers
+    Code that gets executed by triggers
 */
 
 'use strict';
 
 function onOpen(event) {
-	if (event.authMode == ScriptApp.AuthMode.NONE) {
-		return;
-	}
+    if (event.authMode == ScriptApp.AuthMode.NONE) {
+        return;
+    }
     var ui = SpreadsheetApp.getUi();
     app.onOpen(ui);
 }
 
 function onInstall(event) {
-	app.createMenus();
+    app.createMenus();
 }
